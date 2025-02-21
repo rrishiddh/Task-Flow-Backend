@@ -49,7 +49,7 @@ app.post("/jwt", async (req, res) => {
 
 async function run() {
   try {
-    await client.connect();
+    // await client.connect();
     const allTasks = client.db("ToDo").collection("taskList");
     const userCollection = client.db("ToDo").collection("Users");
 
